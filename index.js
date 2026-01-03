@@ -46,6 +46,7 @@ const drawGame = () => {
 const showWinner = (userWin) => {
     if(userWin) {
         console.log("You Win!");
+        msg.innerText = "You Win!"
     } else {
         console.log("You Lose!");
     }
