@@ -16,29 +16,31 @@ const playGame = (userChoice) => {
     console.log("computer choice =",compChoice);
 
 
-    //Draw Game
+    //Game Logic
     if(userChoice === compChoice){
         drawGame();
     } else {
-       let userWin = true;
+       let userWin;
        if(userChoice === "rock"){
            //scissors, paper
-           userWin = compChoice === "paper" ? false : true;
+           userWin = compChoice !== "paper";
        }else if(userChoice === "paper"){
            //rock, scissors
-           userWin = compChoice === "scissors" ? false : true;
+           userWin = compChoice !== "scissors";
         } else {
            //rock, paper
-           userWin = compChoice === "rock" ? false : true;
+           userWin = compChoice !== "rock";
        }
        showWinner(userWin);
     }
 };
 
+//Draw Game
 const drawGame = () => {
     console.log("game was draw");
 };
 
+//Display Winner
 const showWinner = (userWin) => {
     if(userWin) {
         console.log("You Win!");
