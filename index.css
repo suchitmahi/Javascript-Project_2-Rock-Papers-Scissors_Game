@@ -10,3 +10,15 @@ h1{
     height: 5rem;
     line-height: 5rem;
 }
+
+.choice{
+    height: 165px;
+    width: 165px;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
