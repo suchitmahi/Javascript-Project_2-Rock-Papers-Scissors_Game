@@ -39,6 +39,7 @@ const playGame = (userChoice) => {
 //Draw Game
 const drawGame = () => {
     console.log("game was draw");
+    msg.innerText = "Game Draw"
 };
 
 //Display Winner
