@@ -32,26 +32,26 @@ const playGame = (userChoice) => {
            //rock, paper
            userWin = compChoice !== "rock";
        }
-       showWinner(userWin);
+       showWinner(userWin, userChoice, compChoice);
     }
 };
 
 //Draw Game
 const drawGame = () => {
     console.log("game was draw");
-    msg.innerText = "Game Draw"
+    msg.innerText = "Game Draw, Play Again!"
     msg.style.backgroundColor = "#081b31";
 };
 
 //Display Winner
-const showWinner = (userWin) => {
+const showWinner = (userWin, userChoice, compChoice) => {
     if(userWin) {
         console.log("You Win!");
-        msg.innerText = "You Win!"
+        msg.innerText = `You Win! Your ${userChoice} Beats ${compChoice}`;
         msg.style.backgroundColor = "green";
     } else {
         console.log("You Lose!");
-        msg.innerText = "You Lose!"
+        msg.innerText = `You Lose! Comp's ${compChoice} Beats ${userChoice}`;
         msg.style.backgroundColor = "red";
     }
 }
