@@ -53,3 +53,16 @@ img{
 .comp-score{
     font-size: 4rem;
 }
+
+.msg-container{
+    margin-top: 5rem;
+}
+
+#msg{
+    background-color: #081b31;
+    color: white;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 1rem
+}
