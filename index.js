@@ -19,12 +19,33 @@ const playGame = (userChoice) => {
     //Draw Game
     if(userChoice === compChoice){
         drawGame();
+    } else {
+       let userWin = true;
+       if(userChoice === "rock"){
+           //scissors, paper
+           userWin = compChoice === "paper" ? false : true;
+       }else if(userChoice === "paper"){
+           //rock, scissors
+           userWin = compChoice === "scissors" ? false : true;
+        } else {
+           //rock, paper
+           userWin = compChoice === "rock" ? false : true;
+       }
+       showWinner(userWin);
     }
 };
 
 const drawGame = () => {
     console.log("game was draw");
 };
+
+const showWinner = (userWin) => {
+    if(userWin) {
+        console.log("You Win!");
+    } else {
+        console.log("You Lose!");
+    }
+}
 
 choices.forEach((choice) => {
     choice.addEventListener("click" , () => {
