@@ -11,12 +11,14 @@ const genCompChoice = () => {
 
 const playGame = (userChoice) => {
     console.log("user choice =", userChoice);
+    //generate computer choice
+    const compChoice = genCompChoice();
+    console.log("computer choice =",compChoice);
 };
 
 choices.forEach((choice) => {
     choice.addEventListener("click" , () => {
         const userChoice = choice.getAttribute("id");
-        console.log(userChoice ,"was clicked");
         playGame(userChoice);
     });
 });
