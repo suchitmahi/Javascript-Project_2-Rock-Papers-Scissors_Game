@@ -24,6 +24,8 @@ Play against the computer and track your score in real time.
 
 ---
 
+## 📂 Project Structure
+
 ## 🎮 How to Play
 
 1. Open `index.html` in your browser  
