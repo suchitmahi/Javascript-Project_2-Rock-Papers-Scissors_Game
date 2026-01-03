@@ -7,7 +7,7 @@ const genCompChoice = () => {
     const options = ["rock", "paper" , "scissors"];
     const randomIdx = Math.floor(Math.random() * 3);
     return options[randomIdx];
-}
+};
 
 const playGame = (userChoice) => {
     console.log("user choice =", userChoice);
