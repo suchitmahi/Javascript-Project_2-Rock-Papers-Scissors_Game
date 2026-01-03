@@ -49,6 +49,7 @@ const showWinner = (userWin) => {
         msg.innerText = "You Win!"
     } else {
         console.log("You Lose!");
+        msg.innerText = "You Lose!"
     }
 }
 
