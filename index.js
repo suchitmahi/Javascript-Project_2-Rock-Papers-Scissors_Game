@@ -40,6 +40,7 @@ const playGame = (userChoice) => {
 const drawGame = () => {
     console.log("game was draw");
     msg.innerText = "Game Draw"
+    msg.style.backgroundColor = "#081b31";
 };
 
 //Display Winner
@@ -47,9 +48,11 @@ const showWinner = (userWin) => {
     if(userWin) {
         console.log("You Win!");
         msg.innerText = "You Win!"
+        msg.style.backgroundColor = "green";
     } else {
         console.log("You Lose!");
         msg.innerText = "You Lose!"
+        msg.style.backgroundColor = "red";
     }
 }
 
